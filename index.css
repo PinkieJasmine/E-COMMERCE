@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+body{
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+nav h2{
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+nav ul{
+    margin-left: 30px;
+    display: flex;
+}
+nav ul li a{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px 0px 20px;
+}
+nav li{
+    list-style-type: none;
+    margin-right: 0.5rem;
+}
+nav a{
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+.navigation-card {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+.tab{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    background-color: rgb(252, 252, 252);
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.tab:hover {
+    background-color: rgb(227, 223, 223);
+}
+.toggle_btn{
+    font-size: 2.2rem;
+    cursor: pointer;
+    display: none;
+}
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: -5px;
+    top: 60px;
+    height: 0;
+    /* width: 300px; */
+    transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 450px;
+}
+.dropdown_menu.open ul{
+    opacity: 1;
+}
+.dropdown_menu li{
+    list-style-type: none;
+    padding: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+@media screen and (max-width: 768px){
+    ul li{
+        display: none;
+    }
+    .dropdown_menu{
+        display: block;
+        left: 2rem;
+        width: unset;
+    }
+    nav .toggle_btn{
+        display: block;
+    }
+}
