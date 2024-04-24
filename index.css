@@ -14,7 +14,7 @@ nav{
     padding: 0 1.5rem;
 }
 nav h2{
-    font-size: 25px;
+    font-size: 35px;
     cursor: pointer;
     font-weight: bolder;
 }
@@ -33,7 +33,7 @@ nav li{
 }
 nav a{
     position: relative;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 700;
     text-decoration: none;
     color: black;
@@ -100,7 +100,54 @@ nav a{
     color: black;
 }
 
+/* BODY */
+.man{
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+}
 
+.one::before{
+    content: '\2015';
+}
+.one::after{
+    content: '\2015';
+}
+
+.text{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    text-align: center;
+    /* transform: translate(-50%, -50%); */
+}
+.one{
+    font-size: 25px;
+    font-weight: 400;
+}
+.two{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 55px;
+    font-weight: lighter;
+}
+.three{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+.btn{
+    background-color: transparent;
+    border: 1px solid #383838;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 70px;
+    width: 200px;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: #A749FF;
+    border: 1px solid #F37373;
+}
 
 @media screen and (max-width: 768px){
     ul li{
@@ -114,4 +161,31 @@ nav a{
     nav .toggle_btn{
         display: block;
     }
+    .man{
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;
+        height: fit-content;
+    }
+    .text{
+        position: absolute;
+        top: 15%;
+        left: 52%;
+    }
+    .one{
+        font-size: 17px;
+    }
+    .two{
+        font-size: 22px;
+    }
+    .three{
+        font-size: 10px;
+    }
+    .btn{
+        margin-top: 10px;
+        font-size: 13px;
+        height: 40px;
+        width: 100px;
+    }
 }
+
