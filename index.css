@@ -1,11 +1,5 @@
 *{
     margin: 0;
-    padding: 0;
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-body{
-    height: 100%;
 }
 nav{
     display: flex;
@@ -117,8 +111,8 @@ nav a{
 
 .text{
     position: absolute;
-    top: 15%;
-    left: 50%;
+    top: 14%;
+    left: 52%;
     text-align: center;
     /* transform: translate(-50%, -50%); */
 }
@@ -149,6 +143,63 @@ nav a{
     border: 1px solid #F37373;
 }
 
+/* MIDDLE */
+.middle{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.4;
+}
+.img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.text2{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.top{
+    font-weight: bold;
+    font-size: 15px;
+}
+.lorem{
+    margin-top: 5px;
+}
+
+
+/* BOTTOM */
+.section{
+    margin-top: 60px;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.head h2{
+    font-size: 25px;
+}
+.head p{
+    margin-top: 10px;
+}
+span hr{
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    height: 2px;
+    background-color: black;
+}
+.items{
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 768px){
     ul li{
         display: none;
@@ -169,7 +220,7 @@ nav a{
     }
     .text{
         position: absolute;
-        top: 15%;
+        top: 12%;
         left: 52%;
     }
     .one{
@@ -186,6 +237,20 @@ nav a{
         font-size: 13px;
         height: 40px;
         width: 100px;
+    }
+    .middle{
+        display: flex;
+        justify-content: space-around;
+    }
+    .p{
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .text{
+        position: absolute;
+        top: 40%;
+        left: 52%;
     }
 }
 
