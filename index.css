@@ -204,6 +204,90 @@ del{
     font-size: 15px;
 }
 
+/* BLOG */
+.blog{
+    letter-spacing: 2px;
+    margin-top: 40px;
+    font-family: Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.blog::after{
+    content: '\2015';
+}
+.blog::before{
+    content: '\2015';
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+}
+.cards2{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 87%;
+    position: relative;
+    top: -100px;
+    background-color: white;
+}
+.cards h2{
+    padding: 15px 0px 15px 0px;
+    font-size: 25px;
+}
+
+/* FOOTER */
+footer{
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.footer{
+    color: #141414;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+.footer p{
+    cursor: pointer;
+}
+.footer p:hover{
+    color: rgb(167, 53, 167);
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.center1, .center2, .center3{
+    line-height: 30px;
+}
+.right{
+    line-height: 30px;
+}
+input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #383838;
+}
+a{
+    font-size: 17px;
+    color: #141414;
+}
+a:hover{
+    color: purple;
+}
+
 
 @media only screen and (min-width: 280px){
     .tab{
